@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>house_price_pred </title>
+    <style>
+        body{
+            background-image : url(https://assets.entrepreneur.com/content/3x2/2000/1591900317-GettyImages-1137516784.jpg);
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(84, 80, 0);">
+   
+   <h1> 
+    <center>REAL ESTATE <b>PREDICTION</b></center></h1>
+    <form method="POST" action="/predict_rate">
+
+
+        <label>No:</label>
+        <input type = "text" name = "No">
+         
+        </select>
+        <br>
+        <br>
+<!-- ################################################ -->
+        <label>Transaction Date:</label>
+        <input type = "text" name = "X1_transaction_date">
+        </select>
+        <br>
+        <br>
+<!-- ############################################## -->
+        <label>House Age:</label>
+        <input type = "text" name = "X2_house_age">
+        
+        </select>
+        <br>
+        <br>
+ <!-- ################################################ -->
+        <label>Distance to the nearest MRT station:</label>
+        <input type = "text" name = "X3_distance_to_the_nearest_MRT_station">
+        </select>
+        <br>
+        <br>
+<!-- ############################################## -->
+        <label>Number of convenience stores:</label>
+        <input type = "text" name = "X4_number_of_convenience_stores">
+        </select>
+        <br>
+        <br>
+<!-- ################################################ -->
+         <label>Latitude:</label>
+         <input type = "text" name = "X5_latitude">
+         </select>
+         <br>
+         <br>
+<!-- ############################################## -->
+        <label>Longitude:</label>
+        <input type = "text" name = "X6_longitude">
+        </select>
+        <br>
+        <br>
+<!-- ################################################ -->
+
+
+
+        <input type = "submit" value="SUBMIT">
+
+        <br>
+
+        <!-- <h4><strong> <b> {{prediction}} </b> </strong></h4> -->
+        <h4><strong>Your home price charges will be <b> {{prediction}} /- Rs.</b> Only </strong></h4>
+
+
+
+    </form>
+
+
+</body>
+</html>
+
